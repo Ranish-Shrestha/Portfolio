@@ -1,0 +1,392 @@
+body {
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    background-color: #14131a;
+    color: #d4d3d3;
+    padding: 20px;
+}
+
+nav {
+    top: -2%;
+    margin-left: -28px;
+    width: 100%;
+    position: fixed;
+    background-color: #1c1b23;
+}
+
+.container {
+    padding: 22px 22px 10px 22px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container ul li {
+    list-style: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.container ul li a:hover {
+    padding: 12px;
+    color: #fc0;
+}
+
+.container ul li a {
+    margin: 8px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.nav-menu .active {
+    border-bottom: 2px solid #d0d7d9;
+}
+
+.container p{
+    margin-bottom: 16px;
+    color: #fc0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+
+.introduction-section {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.photo-container {
+    width: 50%;
+    height: min-content;
+    padding-right: 10px;
+}
+
+.profile-image {
+    object-fit: contain;
+    border: solid;
+    border-width: 4px;
+    border-color: rgb(255 255 255);
+    border-radius: 50px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.introduction {
+    text-align: justify;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.project-section, .skill-moreproject-section {
+    display: grid;
+    padding: 0;
+    margin-top: 1.25rem;
+}
+
+
+.heading p {
+    color: rgb(228 228 231);
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.projects {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.projects a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    color: rgb(39 39 42);
+    background-color: rgb(255 255 255);
+    border-radius: 0.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    gap: 0.75rem;
+}
+
+.project-image {
+    object-fit: contain;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    color: transparent;
+}
+
+.card-inner {
+    height: 5rem;
+    padding: 0rem 1rem;
+}
+
+.card-inner strong {
+    color: #000;
+    font-weight: bold;
+}
+
+.card-inner p {
+    color: #4f4f52;
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+
+.skills-section {
+    padding: 1.5rem;
+}
+
+.skills {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.skill-set {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #1c1b23;
+    border-radius: 0.375rem;    
+}
+
+.skill-set p {
+    color: #d4d3d3;
+    letter-spacing: .05em;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.skill-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+} 
+
+.skill {
+    background-color: #14131a;
+    color: #8b8a91;
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+    font-size: .95rem;
+    line-height: 1rem;
+}
+
+.skill-blue {
+    border: rgba(59,130,246,.6) solid 1px;
+}
+
+.skill-yellow {
+    border:rgba(234,179,8,.6) solid 1px;
+}
+
+.skill-orange {
+    border: rgba(249,115,22,.6) solid 1px;
+}
+
+.more-project {
+    display: grid;
+    background-color: #1c1b23;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.more-project-heading {
+    color: rgb(228 228 231);
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 0.5rem;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    gap: 1rem;
+}
+
+.project-list a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.project-details {
+    display: flex;
+    color: #d4d3d3;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.project-details svg, .project-logo, .contact-logo {
+    display: block;
+}
+
+.project-description {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+}
+
+.project-description .project-name {
+    display: flex;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.project-description .project-infos {
+    display: flex;
+    color: #8b8a91;
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.edu-exp-phn-section {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.education-section,
+.experience-section,
+.contact-section {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #1c1b23;
+    border-radius: 0.375rem;
+    margin-top: 1.5rem;
+}
+
+.sec-body {
+    margin-top: -20px;
+    margin-left: 45px;
+}
+
+.sec-name {
+    color: #d4d3d3;
+    letter-spacing: .05em;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.sec-description,
+.sec-date {
+    color: #8b8a91;
+    font-size: .95rem;
+    line-height: 1rem;
+    margin-top: -10px;
+}
+
+.contact-logo {
+    height: 24px;
+    width: 24px;
+    color: white;
+}
+
+.contact-section li{
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+.contact-section a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.contact-section button {
+    background-color: #1c1b23;
+    color: rgb(228 228 231);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.message-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #1c1b23;
+    border-radius: 0.375rem;
+    margin-top: 1.5rem;
+}
+
+.message-body label {
+    float: left;
+    width: 11em;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 9px;
+}
+
+.message-body input,
+.message-body select {
+    margin-bottom: 10px;
+}
+
+.message-body input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+}
+
+.checkbox-group {
+    display: grid;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.checkbox-group div {
+    width: fit-content;
+}
+
+.checkbox-group label {
+    float: none;
+    margin: 0;
+    text-align: unset;
+}
+
+#recruitment-timeline {
+    width: 165px;
+    height: 25px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.submit-btn {
+    height: 30px;
+    width: 90px;
+    background-color: #394a39;
+    color: #e4e4d4;
+}

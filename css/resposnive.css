@@ -1,0 +1,188 @@
+@media screen and (min-width:1024px) {
+    .introduction-section {
+        flex-direction: row;
+    }
+
+    .projects,
+    .skill-moreproject-section,
+    .skills {
+        grid-template-columns: repeat(4,minmax(0,1fr));
+    }
+
+    .skills-section {
+        grid-column: span 3/span 3;
+    }
+
+    .edu-exp-phn-section {
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+
+    .message-section {
+        width: 65%;
+    }
+
+    .checkbox-group {
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    .introduction h1,
+    .heading p {
+        text-align: center;
+    }
+
+    .introduction-section {
+        margin-top: 10%;
+        flex-direction: column;
+    }
+
+    .projects,
+    .skill-moreproject-section,
+    .edu-exp-phn-section,
+    .skills 
+    {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+    .skills-section {
+        grid-column: span 2/span 2;
+    }
+
+    .sec-body {
+        margin-left: 25px;
+    }
+
+    .checkbox-group {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        width: 59%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        top: 5;
+        right: 35px;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        display: flex;
+        left: -100%;
+        top: -15rem;
+        flex-direction: column;
+        background-color: #000000d3;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+        top: -37px;
+        padding: 3rem 0;
+    }
+
+    .nav-link {
+        margin: 1.2rem 0;
+    }
+
+    .container ul li {
+        margin-bottom: 1.1rem;
+    }
+
+    .introduction h1,
+    .heading p,
+    .more-project-heading {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .introduction p {
+        margin: 20px -10px;
+        word-spacing: 0.1rem;
+        line-height: 1.25rem;
+    }
+
+    .photo-container{
+        width: unset;
+    }
+
+    .introduction-section {
+        flex-direction: column;
+    }
+
+    .introduction {
+        text-align: left;
+    }
+    
+    .projects,
+    .skill-moreproject-section,
+    .skills,
+    .edu-exp-phn-section {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+
+    .skills-section {
+        grid-column: span 2/span 2;
+    }
+
+    .sec-body {
+        margin-left: 20px;
+    }
+
+    .contact-section li{
+        margin-left: -40px;
+    }
+
+    .message-body {
+        margin-left: 20px;
+    }
+
+    .message-body label {
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:321px){
+
+    .floatnotshare {
+        float: unset !important;
+    }
+
+    .checkbox-group,
+    #recruitment-timeline {
+        margin-left: 88px;
+    }
+}
+
+@media screen and (max-width:320px){
+    
+    .photo-container{
+        width: unset;
+    }
+    
+    .message-body label {
+        float: unset;
+    }
+
+}
